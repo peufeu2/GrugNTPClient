@@ -13,9 +13,9 @@ log() function with the same prototype as printf. You probably have one already,
 
 * Features
 
-- GrugNTPClient uses sockets. Arduino UDP library is not necessary, which reduces the footprint. This client can be used on other platforms, by removing the ESP32 specific call to check if WiFi is connected.
+GrugNTPClient uses sockets. Arduino UDP library is not necessary, which reduces the footprint. This client can be used on other platforms, by removing the ESP32 specific call to check if WiFi is connected.
 
-- GrugNTPClient tries to be as asynchronous as possible to work well with cooperative multitasking (ie, coroutines). Its only blocking action is to resolve the NTP server name. After that the server IP address is cached. Then, a non-blocking socket is used to send and receive UDP packets.
+GrugNTPClient tries to be as asynchronous as possible to work well with cooperative multitasking (ie, coroutines). Its only blocking action is to resolve the NTP server name. After that the server IP address is cached. Then, a non-blocking socket is used to send and receive UDP packets.
 
 * How to use
 
